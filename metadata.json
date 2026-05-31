@@ -1,0 +1,6 @@
+{
+  "name": "MiLifeOS Sovereign Anchor Hub",
+  "description": "Establish, manage, and print your MiLifeOS Sovereign Anchor Card. Set regional settings, configure payment gateways, run a split calculator, and generate custom offline recovery words and QR codes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

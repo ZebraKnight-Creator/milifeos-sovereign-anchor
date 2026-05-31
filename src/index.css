@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&family=Lora:ital,wght@1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-brandBg: #F4F2F0;
+  --color-panelBg: #ffffff;
+  --color-innerBg: #F4F2F0;
+  --color-accentBlue: #0066cc;
+  --color-accentGreen: #00aa6c;
+  --color-accentOrange: #ff9100;
+  --color-accentPurple: #8c30f5;
+  --color-borderClr: #0D0D0D;
+}
+
+/* Grid-mesh modernist technical background */
+.grid-mesh {
+  background-color: #F4F2F0;
+  background-image: 
+    linear-gradient(to right, rgba(13, 13, 13, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 13, 13, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F2F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #0D0D0D;
+  border-radius: 0px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-anchor-card, #printable-anchor-card * {
+    visibility: visible;
+  }
+  #printable-anchor-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white !important;
+    color: black !important;
+    border: 3px solid #000 !important;
+    padding: 30px !important;
+    box-shadow: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .seed-word {
+    background: #f4f4f5 !important;
+    border: 1px solid #e4e4e7 !important;
+    color: black !important;
+  }
+  .system-tag-print {
+    border: 2px solid #000 !important;
+    color: black !important;
+  }
+}
+
